@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+<body>
+    <h2>Notas</h2>
+    <script>
+        var n1 = parseFloat(prompt("Digite sua primeira nota parcial:"))
+        var n2 = parseFloat(prompt("Digite sua segunda nota parcial:"))
+        var media = (n1+n2)/2
+
+        var conceito = ""
+        var aprovacao = ""
+        
+        if ((media >= 0) && (media < 4)) {
+            conceito = "E"
+        }
+        else if ((media >= 4) && (media <= 6)) {
+            conceito = "D"
+        }
+        else if ((media >= 6) && (media < 7.5)) {
+            conceito = "C"
+        }
+        else if ((media >= 7.5) && (media < 9)) {
+            conceito = "B"
+        }
+        else if ((media >= 9) && (media = 10)) {
+            conceito = "A"
+        }
+
+        if (conceito == "A" || conceito == "B" || conceito == "C") {
+            aprovacao = "APROVADO"
+        }
+        else {
+            aprovacao = "REPROVADO"
+        }
+S
+        alert(`Suas notas: \n nota 1: ${n1} \n nota 2: ${n2} \n Média: ${media} \n Conceito: ${conceito} \n Resultado: ${aprovacao}`)
+    </script>
+</body>
+</html>

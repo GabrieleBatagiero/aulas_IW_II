@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    h2{
+        color: green;
+    }
+</style>
+<body>
+    <h2>Digite uma letra:</h2>
+    <input id="char" type="text"> <br />
+   <button onclick="check()">CHECAR</button>
+
+   <script type="text/javascript">
+
+    function check(){
+     var letra = document.getElementById("char").value;
+     letra = letra.toLowerCase();
+
+     if(letra=='a' || letra=='e' || letra=='i' || letra=='o' || letra=='u')
+   alert("Vogal");
+  else     
+      alert("Consoante");
+    }
+ </script>
+</body>
+</html>
