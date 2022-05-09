@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+<body>
+    <p>Faça um script que calcule as raízes de uma equação do segundo grau, na forma ax² + bx + c.
+        O script deverá pedir os valores de a, b e c e fazer os testes necessários.</p>
+
+    <script>
+        var a = Number(prompt('Digite o valor de a'))
+        var b = Number(prompt('Digite o valor de b'))
+        var c = Number(prompt('Digite o valor de c'))
+
+        //Calcular o Delta
+        // Delta = b² - 4ac
+        // Math.pow(base,exp)
+
+        var delta = (Math.pow(b,2))-4*a*c
+        console.log('Valor do delta: ',delta)
+
+        //verificar se o delta<0, delta=0 ou delta>0
+        if(delta<0){
+            console.log('Não existem raízes pois o Delta é negativo!')
+        }else{
+            if(delta == 0){
+                var result = calcula_raiz(b,delta,a) //isso vai ser um vetor recebe 2 valores
+                console.log('Raiz x1 ==> ',result[0])
+                console.log('Raiz x2 ==> ',result[1])
+                console.log('Com delta igual a zero, as duas raízes são iguais!')
+            }else{
+                var result = calcula_raiz(b,delta,a)
+                console.log('Raiz x1 ==> ',result[0])
+                console.log('Raiz x2 ==> ',result[1])
+            }
+        }
+
+        function calcula_raiz(b,delta,a){
+            var x1 = (-b + Math.sqrt(delta))/2*a
+            var x2 = (-b - Math.sqrt(delta))/2*a
+            //console.log('Raiz x1 ==> ',x1)
+            //console.log('Raiz x2 ==> ',x2)
+            var resultado = [x1,x2]
+            return resultado
+        }
+    </script>
+
+
+</body>
+</html>
