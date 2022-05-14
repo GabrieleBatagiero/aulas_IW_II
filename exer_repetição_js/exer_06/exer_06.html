@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06- Repetição</title>
+</head>
+<body>
+    <script>
+
+        var n1 = Number(prompt('Digite o número base:'))
+        var n2 = Number(prompt('Digite o expoente:'))
+        var conta = 1
+
+        if (n2 > 0) {
+            if (n2 > 1) {
+                for (var x = 1; x <= n2; x++) {
+                    conta = conta * n1
+                }
+                document.write(`O valor da conta é ${conta}`)
+            }
+            else {
+                document.write(`O valor da conta é ${n1}`)
+            }
+        }
+        else {
+            document.write(`O valor da conta é 1`)
+        }
+    </script>
+</body>
+</html>

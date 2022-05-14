@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03- Repetição</title>
+</head>
+<body>
+    <script>
+        var n = 0
+        var a = Number(prompt('qual a população de A? '))
+        var b = Number(prompt('qual a população de B? '))
+        var ca = Number(prompt('qual a taxa de crescimento de A? '))
+        var cb = Number(prompt('qual a taxa de crescimento de B? '))
+
+        if ((a < b) && (ca > cb)) {
+            while (a <= b) {
+                a = a + (a * (ca / 100))
+                b = b + (b * (cb / 100))
+                n++
+            }
+            alert(`A quantidade de anos necessários é de: ${n}`)
+        }
+        else {
+            alert('o valor da cidade A é menor do que a cidade B, e a taxa de crescimento da cidade A maior do que a da cidade B.')
+        }
+
+        function fazer() {
+            var n = 0
+            var a = Number(prompt('qual a população de A? '))
+            var b = Number(prompt('qual a população de B? '))
+            var ca = Number(prompt('qual a taxa de crescimento de A? '))
+            var cb = Number(prompt('qual a taxa de crescimento de B? '))
+
+            if ((a < b) && (ca > cb)) {
+                while (a <= b) {
+                    a = a + (a * (ca / 100))
+                    b = b + (b * (cb / 100))
+                    n++
+                }
+                alert(`A quantidade de anos necessários é de:  ${n}`)
+            }
+            else {
+                alert('o valor da cidade A é menor do que a cidade B, e a taxa de crescimento da cidade A maior do que a da cidade B.')
+            }
+        }
+    </script>
+</body>
+</html>
