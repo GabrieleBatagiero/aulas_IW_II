@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02- VETORES</title>
+</head>
+<style>
+    body{
+        background-color: rgb(161, 252, 232);
+    }
+</style>
+<body>
+    <!--2. Crie um programa que solicite um número inteiro para o usuário. O 
+programa deve criar um vetor que comece pelo número informado 
+pelo usuário e vá adicionando as próximas posições deste vetor o 
+incremento de um em um até que o último número armazenado 
+neste vetor seja o dobro do número digitado-->
+    <script>
+     let number = Number(prompt('Informe um numero:'))
+        let cont = number 
+        let vet = [number]
+        
+        while(cont != number* 2){
+            cont++
+            vet.push(cont)
+        }
+        document.write(`As posições são: ${vet}`)
+
+    </script>  
+</body>
+</html>
