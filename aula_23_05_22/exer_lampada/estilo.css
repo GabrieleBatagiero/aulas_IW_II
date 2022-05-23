@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(220, 254, 255);
+}
+
+h2{
+    color: rgb(59, 0, 107);
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conteudo{
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.botao{
+    background-color:rgb(59, 0, 107);
+    text-align: center;
+}
+
