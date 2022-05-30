@@ -1,0 +1,10 @@
+até 10 anos bebe (menino e menina)
+até 20 anos um adolecente um adolecente
+acima de 20 anos um adulto 
+
+bebe-O
+crinaça-O
+adolecente-Ok
+adulto-Ok
+
+
