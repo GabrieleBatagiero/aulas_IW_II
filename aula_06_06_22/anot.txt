@@ -1,0 +1,10 @@
+Crinado gráficos JS e PHP 
+-Bibliotecas Google charts
+
+['<?= $mes[0]; ?>',<?= $dados[0]; ?>, <?= $vendas[0]; ?>],
+          ['<?= $mes[1];?>', <?= $dados[1]; ?>, <?= $vendas[1]; ?>],
+          ['<?= $mes[2];?>', <?= $dados[2]; ?>, <?= $vendas[2]; ?>],
+          ['<?= $mes[3];?>', <?= $dados[3]; ?>, <?= $vendas[3]; ?>],
+          ['<?= $mes[4];?>', <?= $dados[4]; ?>, <?= $vendas[4]; ?>]
+
+https://developers.google.com/chart/interactive/docs/gallery/columnchart
